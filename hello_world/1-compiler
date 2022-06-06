@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c "$CFILE" -o main.o # The flag -c will compile the file but do not link.# the flag -o will place the output in a file.
+gcc -c "$CFILE" #-o main.o redirects the output to a file but here it's not necessary  # The flag -c will compile the file but do not link. When using the flag -c By default, the object file name for a source file is made by replacing the suffix .c, .i, .s, etc., with .o.
