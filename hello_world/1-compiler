@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -c "$CFILE" -o main.o # The flag -c will compile the file but do not link.# the flag -o will place the output in a file.
