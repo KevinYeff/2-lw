@@ -1,0 +1,3 @@
+#!/bin/bash
+# -masm=dialect changes the default dialect (at&t)
+gcc -S -masm=intel $CFILE
