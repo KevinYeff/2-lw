@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -S "$CFILE" # The -S th output is in the form of an assembler code file, by default the assembler file name for a source file is made by replacing the suffix .c, .i, etc., with .s.
