@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -c "$CFILE" -o cisfun # -c to compile, -o to make an executable file
