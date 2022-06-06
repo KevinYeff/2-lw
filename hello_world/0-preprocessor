@@ -1,5 +1,2 @@
 #!/bin/bash
-gcc -E "$CFILE" -o c
-# In gcc the preprocessor is actually integrated with the compiler.
-# The flag -E will stop the compiler after the preprocessing stage.
-# the flag -o will place the output in a file.
+gcc -E "$CFILE" -o c # In gcc the preprocessor is actually integrated with the compiler. # The flag -E will stop the compiler after the preprocessing stage.# the flag -o will place the output in a file.
