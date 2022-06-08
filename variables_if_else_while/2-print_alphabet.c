@@ -6,9 +6,10 @@
  */
 int main(void)
 {
-	char lc; /* Declaring Data Type "char" as lc */
-	for(lc = 'a'; lc <= 'z'; lc++)
+	char lc;/* Declaring Data Type "char" as lc */
+
+	for (lc = 'a'; lc <= 'z'; lc++)
 		putchar(lc);
 	putchar('\n');
-    return 0;
+	return (0);
 }
