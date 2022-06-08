@@ -6,19 +6,22 @@
  */
 int main(void)
 {
-	int n, n2, c = 0;
+	int n, n2;
 
 	for (n = '0'; n <= '9'; n++)
 	{
-		for (n2 = n + 1; n2 <= '9'; n2++, c++)
+		for (n2 = n + 1; n2 <= '9'; n2++)
 		{
-			if (n != 0)
+			if (n <= n2)
 			{
 				putchar(n);
 				putchar(n2);
+				if (n != '8')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			putchar(',');
-			putchar(' ');
 		}
 	}
 	putchar('\n');
