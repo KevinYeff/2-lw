@@ -12,7 +12,7 @@ int print_last_digit(int h)
 	int i;
 
 	if (h < 0)
-		h = -1;
+		h = -h;
 
 	i = h % 10;
 
