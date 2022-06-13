@@ -33,9 +33,9 @@ void print_times_table(int n)
 				}
 				else if (r >= 100 && r <= 999)
 				{
-					_putchar('0' + (r / 100));
-					_putchar('0' + (r /10) % 10);
-					_putchar('0' + (r % 10));
+					_putchar((r / 100) + '0');
+					_putchar(((r / 10) % 10) + '0');
+					_putchar((r % 10) + '0');
 				}
 			}
 			_putchar('\n');
