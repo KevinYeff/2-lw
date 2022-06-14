@@ -11,7 +11,7 @@
 
 void print_numbers(void)
 {
-	h = 0;
+	int h = 0;
 
 	for (; h <= 9; h++)
 	{
