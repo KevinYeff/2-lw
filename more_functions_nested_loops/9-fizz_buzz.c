@@ -16,10 +16,6 @@ int main(void)
 
 	for (h = 1; h <= 100; h++)
 	{
-		if (h < 100)
-		{
-			printf(" ");
-		}
 		if (h % 15 == 0)
 		{
 			printf("FizzBuzz");
@@ -36,6 +32,11 @@ int main(void)
 		else
 		{
 			printf("%d", h);
+		}
+
+		if (h < 100)
+		{
+			printf(" ");
 		}
 	}
 	printf(" ");
