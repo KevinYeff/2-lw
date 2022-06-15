@@ -21,13 +21,13 @@ int main(void)
 			printf("FizzBuzz");
 		}
 
-		else if (h % 5 == 0)
-		{
-			printf("Buzz");
-		}
 		else if (h % 3 == 0)
 		{
 			printf("Fizz");
+		}
+		else if (h % 5 == 0)
+		{
+			printf("Buzz");
 		}
 		else
 		{
@@ -39,6 +39,6 @@ int main(void)
 			printf(" ");
 		}
 	}
-	printf(" ");
+	printf("\n");
 	return (0);
 }
