@@ -23,13 +23,9 @@ void print_array(int *a, int n)
 
 		if (h != (n - 1))
 		{
-			printf(",");/* only if field not equal to n-1
+			printf(", ");/* only if field not equal to n-1
 				      * 5 in this case
 				      */
-		}
-		if (h < n)
-		{
-			printf(" ");
 		}
 	}
 	printf("\n");
