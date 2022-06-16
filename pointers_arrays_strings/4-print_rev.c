@@ -17,4 +17,5 @@ void print_rev(char *s)
 	{
 		_putchar(s[h]);
 	}
+	_putchar(10);
 }
