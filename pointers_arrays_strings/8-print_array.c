@@ -15,17 +15,21 @@ void print_array(int *a, int n)
 {
 	int h;/* field */
 
-	for (h = 0; h <= n; h++)/* fields containing array value starting
-				  * in 0
+	for (h = 0; h < n; h++)/* fields containing array value starting
+				  * in 0 less than n.
 				  */
 	{
 		printf("%d", a[h]);/* print array value in field */
 
 		if (h != (n - 1))
 		{
-			printf(", ");/* only if field not equal to n-1
+			printf(",");/* only if field not equal to n-1
 				      * 5 in this case
 				      */
+		}
+		if (h < n)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
