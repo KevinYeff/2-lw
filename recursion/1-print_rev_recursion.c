@@ -18,8 +18,4 @@ void _print_rev_recursion(char *s)
 		_print_rev_recursion(&(s[h + 1]));
 		 _putchar(s[h]);
 	}
-	else
-	{
-		_putchar(10);
-	}
 }
