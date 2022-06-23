@@ -1,4 +1,4 @@
-#ifdef STATIC_LIBRARIES
+#ifndef STATIC_LIBRARIES
 #define STATIC_LIBRARIES
 
 int _putchar(char c);
