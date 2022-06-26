@@ -38,6 +38,5 @@ char *_strdup(char *str)
 	{
 		s2[h] = str[h];
 	}
-	s2[h] = str[h];
 	return (s2);
 }
