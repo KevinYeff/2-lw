@@ -15,26 +15,17 @@
 char *_strdup(char *str)
 {
 	char *s;
-	int h, k;
+	int a, b;
 
-	if (str == NULL)
-
+	if (str == 0)
 		return (NULL);
-
-
-	for (h = 0; str[h] != '\0'; h++)
-
-		k++;
-
-	s = malloc(k * sizeof(char));
-
-	if (s == NULL)
-
+	for (a = 0; str[a] != '\0'; a++)
+		;
+	a++;
+	s = malloc(a * sizeof(*s));
+	if (s == 0)
 		return (NULL);
-
-	for (h = 0; h < str[h]; h++)
-
-		s[h] = str[h];
-
+	for (b = 0; b < a; b++)
+		s[b] = str[b];
 	return (s);
 }
