@@ -26,8 +26,6 @@ char *_strdup(char *str)
 
 		k++;
 
-	k += 1;
-
 	s = malloc(k * sizeof(char));
 
 	if (s == NULL)
