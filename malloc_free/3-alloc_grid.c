@@ -28,8 +28,13 @@ int **alloc_grid(int width, int height)
 	for (x = 0; x < height; x++)
 	{
 		arraypointer[x] = malloc(sizeof(int) * width);
-		if (arraypointer[x] == 0)
+		if (arraypointer[x] == NULL)
 		{
+			for (--x; x >= 0; x++)
+			{
+				free(arraypointer[x]);
+			}
+			free(arraypointer);
 			return (NULL);
 		}
 
