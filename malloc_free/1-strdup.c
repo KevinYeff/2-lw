@@ -14,7 +14,7 @@
 
 char *_strdup(char *str)
 {
-	char *s2;
+	char *s;
 	int h, k;
 
 	if (str == NULL)
@@ -28,15 +28,15 @@ char *_strdup(char *str)
 	}
 	k += 1;
 
-	s2 = malloc(k * sizeof(char));
+	s = malloc(k * sizeof(char));
 
-	if (s2 == NULL)
+	if (s == NULL)
 	{
 		return (NULL);
 	}
 	for (h = 0; h < str[h]; h++)
 	{
-		s2[h] = str[h];
+		s[h] = str[h];
 	}
-	return (s2);
+	return (s);
 }
