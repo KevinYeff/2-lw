@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		psrt = va_arg(nstrings, char *);
 
-		if (nstrings == NULL)
+		if (psrt == NULL)
 			printf("(nill)");
 		else
 			printf("%s", psrt);
